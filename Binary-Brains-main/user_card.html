@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Cards</title>
+    <style>
+        .user-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+        }
+
+        .user-img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .user-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .user-info {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .user-description {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="user-cards"></div>
+
+    <script>
+        
+        const userData = [
+            {
+                "name": "John Doe",
+                "image": "https://randomuser.me/api/portraits/men/1.jpg",
+                "location": "New York, USA",
+                "email": "john.doe@example.com",
+                 "gender":"male",
+                "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "name": "Jane Smith",
+                "image": "https://randomuser.me/api/portraits/women/2.jpg",
+                "location": "lonhvg, USA",
+                "email": "jane.smith@example.com",
+                "gender": "male",
+                "about": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "name": "Sena Hughman",
+                "image": "https://randomuser.me/api/portraits/women/2.jpg",
+                "location": "Biograd na Moru",
+                "email": "shughman0@biblegateway.com",
+                "gender": "Female",
+                
+                "about": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim."
+            },
+            {
+            "name": "Nikolai Strelitzki",
+            "image": "user55.jpg",
+            "location": "Honghualiangzi",
+            "email": "nstrelitzki3@yandex.ru",
+            "gender": "Male",
+            "about": "Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae"
+            // Add more users here
+            },
+            {
+                "name": "Barnebas Blenkensop",
+                "image": "user3.jpg",
+                "location": "Wucun",
+                "email": "bblenkensop7@nytimes.com",
+                "gender": "Male",
+                "about": "Morbi a ipsum. Integer a nibh."
+            },
+            {
+                "name": "Berk Tarn",
+                 "image":"user2.jpg",
+                "location": "Petaluma",
+                "email": "btarnb@cloudflare.com",
+                "gender": "Male",
+                "about": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis."
+
+            },
+            {
+                
+               "name": "Zarla Floch",
+               "image": "https://randomuser.me/api/portraits/men/1.jpg",
+                "location": "Pervomayskoye",
+                "email": "zflochi@friendfeed.com",
+                "gender": "Female",
+                "about": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum"
+            }
+        ];
+
+        // Function to create user cards
+            function createUserCard(user) {
+            let card = document.createElement('div');
+            card.classList.add('user-card');
+
+            let img = document.createElement('img');
+            img.src = user.image;
+            img.alt = user.name + "'s image";
+            img.classList.add('user-img');
+
+            let name = document.createElement('div');
+            name.textContent = user.name;
+            name.classList.add('user-name');
+
+            let location = document.createElement('div');
+            location.textContent = user.location;
+            location.classList.add('user-info');
+
+            let email = document.createElement('div');
+            email.textContent = user.email;
+            email.classList.add('user-info');
+
+            let age = document.createElement('div');
+            age.textContent = "Age: " + user.age;
+            age.classList.add('user-info');
+
+            let description = document.createElement('div');
+            description.textContent = user.description;
+            description.classList.add('user-description');
+
+            card.appendChild(img);
+            card.appendChild(name);
+            card.appendChild(location);
+            card.appendChild(email);
+            card.appendChild(age);
+            card.appendChild(description);
+
+            return card;
+        }
+
+        // Create and display user cards
+        const userCardsContainer = document.getElementById('user-cards');
+        userData.forEach(user => {
+            let card = createUserCard(user);
+            userCardsContainer.appendChild(card);
+        });
+    </script>
+</body>
+
+</html>

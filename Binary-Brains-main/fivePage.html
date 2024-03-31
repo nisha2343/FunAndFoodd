@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fivePage.css">
+ 
+</head>
+<body>
+  <!-- <script src="/Binary-Brains-main/restaurants.html"></script> -->
+  <div class="container5th">
+    
+    <h1>Did you alone ??</h1>
+   <div class="btn-container">
+    <button class="btn" onclick={messageShow(event)}>Yes</button>
+    <h2>or</h2>
+    <a href="./index6.html" target="_blank"><button  class="btn"  onclick={messageShow(event)}>No</button></a>
+   </div>
+   <h2 class="msg"></h2>
+   <div class="find-frd-container">
+    <h2 class="head-2"> Want to find a friend for company ...??</h2>
+   <a href="./user_card.html" target="_blank"><button  class="btn">Click here</button></a>
+   </div>
+  </div>
+  
+    <script>
+    var msg = document.querySelector('.msg');
+    let friend = document.querySelector('.find-frd-container')
+    function messageShow(event){
+      console.log(event.target.innerHTML)
+     if(event.target.innerHTML === 'Yes')
+     {
+      console.log('first click')
+      friend.style.display = 'block';
+    
+     }
+     else{
+      console.log('second click')
+      friend.style.display = 'none';
+      msg.style.display = 'block';
+      msg.innerHTML = 'Okey Enjoy Your Meal 😊';
+      setTimeout(()=>{
+        msg.innerHTML = '';
+        msg.style.display = 'none';
+      }, 3000)
+     }
+    }
+  </script>
+</body>
+</html>

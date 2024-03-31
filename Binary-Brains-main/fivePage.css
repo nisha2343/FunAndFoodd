@@ -1,0 +1,76 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://images.pexels.com/photos/1449773/pexels-photo-1449773.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container5th{
+ width: 500px;
+ padding: 20px;
+ backdrop-filter: blur(2px); 
+ border-radius: 20px;
+ background: #eeeaea35;
+ box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+.container5th h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  font-family:'Times New Roman', Times, serif;
+}
+.btn{
+
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  transition: all 0.5s linaer;
+}
+.btn:hover{
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.head-2{
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  font-family:'Times New Roman', Times, serif;
+}
+.msg{
+  padding: 10px ;
+  text-transform: capitalize;
+  font-size: 20px;
+  display: none;
+}
+.find-frd-container{
+  text-align: center;
+  display: none;
+}
+.find-frd-container .btn{
+margin-top: 20px;
+}

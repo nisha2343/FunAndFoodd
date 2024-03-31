@@ -1,0 +1,230 @@
+body {
+            background-color: rgb(35, 37, 38);
+            background-image: url("https://img.freepik.com/premium-photo/wooden-background_811396-12561.jpg?w=740");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+            
+}
+.page{
+    width: 100%;
+}
+#head{
+    width: fit-content;
+    margin: auto;
+    font-size: 73px;
+    margin-top: 50px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    position: relative;
+    white-space: nowrap;
+}
+#head::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    white-space: nowrap;
+    color: #ffffff;
+    -webkit-text-stroke: 0px transparent;
+    border-right: 2px solid #ffffff;
+    /* animation: animate 4s steps(30) infinite;  */
+    animation: animate 5s linear infinite;
+    overflow: hidden;
+  }
+  
+  @keyframes animate {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  }
+
+.foodie{
+
+   min-height: 82vh;
+   padding: 50px;
+   height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.country-food{
+width: 300px;
+height: 250px;
+padding: 10px;
+background-color: #fff;
+border-radius: 20px;
+box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+transition: transform 0.5s linear ;
+
+}
+.country-food:hover{
+    transform: scale(1.05);
+}
+.country-food img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+   
+}
+.country-food h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* #img1:hover{
+    border-radius: 70px;
+    border-color: rgb(72, 65, 65);
+    border-style: solid ;
+    border-width: 10px;
+    height: 600px;
+    width: 600px;
+    
+}
+#img2:hover {
+    border-radius: 70px;
+    border-color: rgb(72, 65, 65);
+    border-style: solid;
+    border-width: 10px;
+    height: 600px;
+    width: 600px;
+}
+#img3:hover {
+    border-radius: 70px;
+    border-color: rgb(72, 65, 65);
+    border-style: solid;
+    border-width: 10px;
+    height: 600px;
+    width: 600px;
+}
+#img4:hover {
+    border-radius: 70px;
+    border-color: rgb(72, 65, 65);
+    border-style: solid;
+    border-width: 10px;
+    height: 600px;
+    width: 600px;
+}
+#img5:hover {
+    border-radius: 70px;
+    border-color: rgb(72, 65, 65);
+    border-style: solid;
+    border-width: 10px;
+    height: 600px;
+    width: 600px;
+}
+#img6:hover {
+    border-radius: 70px;
+    border-color: rgb(72, 65, 65);
+    border-style: solid;
+    border-width: 10px;
+    height: 600px;
+    width: 600px;
+}
+#american{
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+#ameri{
+    font-size: 50px;
+    margin: 30px;
+    padding: 30px;
+    color: aliceblue;
+}
+#ind{
+    font-size: 50px;
+    margin:30px;
+    padding: 30px;
+    color: aliceblue;
+    
+}
+#italy {
+    font-size: 50px;
+    margin: 30px;
+    padding: 30px;
+    color: aliceblue;
+
+}
+#china {
+    font-size: 50px;
+    
+    margin: 30px;
+    padding: 30px;
+    color: aliceblue;
+
+}
+#sou {
+    font-size: 50px;
+    margin: 30px;
+    padding: 30px;
+    color: aliceblue;
+
+}
+#germany {
+    font-size: 50px;
+    margin: 30px;
+    padding: 30px;
+    color: aliceblue;
+
+} */
+/*  
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 80px;
+    width: 100vw;
+
+}
+
+header nav div {
+    padding-right: 638px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 15px;
+    color: black;
+    font-size: 28px;
+    font-family: 'cursive';
+}
+
+nav ul li a {
+    padding-right: 35px;
+}
+
+div.restaurant h1 {
+    height: 100px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 55px;
+}
+ */ 
